@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToyWorld — Magical Toys for Happy Kids</title>
+  <meta name="description" content="Discover the best toys for kids at ToyWorld. Shop plush toys, educational kits, action figures and more with fast delivery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header id="header">
+    <nav class="navbar" id="navbar">
+      <a href="#" class="logo" aria-label="ToyWorld Home">
+        <span class="logo-icon">🧸</span>
+        <span class="logo-text">Toy<span class="logo-highlight">World</span></span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#shop" class="nav-link">Shop</a></li>
+        <li><a href="#categories" class="nav-link">Categories</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="cart-btn" id="cart-btn" aria-label="Shopping cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-badge">✨ New Arrivals 2026</span>
+      <h1 class="hero-title">Welcome to the <span class="gradient-text">Toy World</span></h1>
+      <p class="hero-subtitle">Discover magical toys that spark imagination and bring endless joy to your little ones. Quality toys, happy memories!</p>
+      <div class="hero-buttons">
+        <a href="#shop" class="btn btn-primary" id="shop-now-btn">
+          <span>Shop Now</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#categories" class="btn btn-secondary">Browse Categories</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Products</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">10K+</span>
+          <span class="stat-label">Happy Kids</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">4.9★</span>
+          <span class="stat-label">Rating</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="hero-image-wrapper">
+        <img src="images/teddy-bear.png" alt="Cute teddy bear toy" width="500" height="500" />
+        <div class="floating-badge badge-1">🎉 Best Seller</div>
+        <div class="floating-badge badge-2">💖 Kids Love It</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED TOYS ===================== -->
+  <section id="shop" class="section featured">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">⭐ Top Picks</span>
+        <h2 class="section-title">Featured Toys</h2>
+        <p class="section-subtitle">Hand-picked favorites that kids absolutely adore</p>
+      </div>
+
+      <div class="products-grid" id="products-grid">
+        <!-- Product Card 1 -->
+        <div class="product-card" data-aos="fade-up">
+          <div class="product-badge">Best Seller</div>
+          <div class="product-image">
+            <img src="images/bunny-toy.png" alt="Cuddly Bunny Plush" loading="lazy" />
+            <div class="product-overlay">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(128)</span>
+            </div>
+            <h3 class="product-name">Cuddly Bunny Plush</h3>
+            <p class="product-desc">Super soft & huggable bunny, perfect bedtime companion</p>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="price-current">$24.99</span>
+                <span class="price-original">$34.99</span>
+              </div>
+              <button class="add-to-cart-btn" data-name="Cuddly Bunny Plush" data-price="24.99">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span>Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-badge sale">-30%</div>
+          <div class="product-image">
+            <img src="images/teddy-bear.png" alt="Classic Teddy Bear" loading="lazy" />
+            <div class="product-overlay">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(256)</span>
+            </div>
+            <h3 class="product-name">Classic Teddy Bear</h3>
+            <p class="product-desc">Timeless teddy bear with a cute bow tie, ultra-soft fur</p>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="price-current">$29.99</span>
+                <span class="price-original">$42.99</span>
+              </div>
+              <button class="add-to-cart-btn" data-name="Classic Teddy Bear" data-price="29.99">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span>Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-badge new">New</div>
+          <div class="product-image">
+            <img src="images/unicorn-toy.png" alt="Magical Unicorn" loading="lazy" />
+            <div class="product-overlay">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(89)</span>
+            </div>
+            <h3 class="product-name">Magical Unicorn</h3>
+            <p class="product-desc">Sparkly rainbow unicorn with silky mane & tail</p>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="price-current">$34.99</span>
+              </div>
+              <button class="add-to-cart-btn" data-name="Magical Unicorn" data-price="34.99">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span>Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-badge hot">🔥 Hot</div>
+          <div class="product-image">
+            <img src="images/robot-toy.png" alt="Smart Robot Buddy" loading="lazy" />
+            <div class="product-overlay">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(74)</span>
+            </div>
+            <h3 class="product-name">Smart Robot Buddy</h3>
+            <p class="product-desc">Interactive robot with lights & sounds, hours of fun!</p>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="price-current">$44.99</span>
+                <span class="price-original">$59.99</span>
+              </div>
+              <button class="add-to-cart-btn" data-name="Smart Robot Buddy" data-price="44.99">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span>Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="product-image">
+            <img src="images/wooden-blocks.png" alt="Rainbow Building Blocks" loading="lazy" />
+            <div class="product-overlay">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(193)</span>
+            </div>
+            <h3 class="product-name">Rainbow Building Blocks</h3>
+            <p class="product-desc">50-piece wooden alphabet blocks, educational & fun</p>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="price-current">$19.99</span>
+                <span class="price-original">$27.99</span>
+              </div>
+              <button class="add-to-cart-btn" data-name="Rainbow Building Blocks" data-price="19.99">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span>Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="product-badge">Popular</div>
+          <div class="product-image">
+            <img src="images/bunny-toy.png" alt="Baby Bunny Mini" loading="lazy" />
+            <div class="product-overlay">
+              <button class="quick-view-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(312)</span>
+            </div>
+            <h3 class="product-name">Baby Bunny Mini</h3>
+            <p class="product-desc">Pocket-sized mini bunny, great gift for toddlers</p>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="price-current">$14.99</span>
+              </div>
+              <button class="add-to-cart-btn" data-name="Baby Bunny Mini" data-price="14.99">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span>Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORIES ===================== -->
+  <section id="categories" class="section categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🎯 Browse</span>
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-subtitle">Find the perfect toy by exploring our curated categories</p>
+      </div>
+
+      <div class="categories-grid">
+        <a href="#" class="category-card" data-aos="zoom-in">
+          <div class="category-icon">🧸</div>
+          <h3>Soft Toys</h3>
+          <p>Plush & cuddly friends</p>
+          <span class="category-count">120+ items</span>
+        </a>
+        <a href="#" class="category-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="category-icon">🧩</div>
+          <h3>Educational Toys</h3>
+          <p>Learn while playing</p>
+          <span class="category-count">85+ items</span>
+        </a>
+        <a href="#" class="category-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="category-icon">🦸</div>
+          <h3>Action Figures</h3>
+          <p>Heroes & adventures</p>
+          <span class="category-count">95+ items</span>
+        </a>
+        <a href="#" class="category-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="category-icon">🏗️</div>
+          <h3>Building Sets</h3>
+          <p>Blocks & construction</p>
+          <span class="category-count">60+ items</span>
+        </a>
+        <a href="#" class="category-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="category-icon">🎨</div>
+          <h3>Arts & Crafts</h3>
+          <p>Creative expression</p>
+          <span class="category-count">70+ items</span>
+        </a>
+        <a href="#" class="category-card" data-aos="zoom-in" data-aos-delay="500">
+          <div class="category-icon">🚗</div>
+          <h3>Vehicles</h3>
+          <p>Cars, trains & more</p>
+          <span class="category-count">55+ items</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROMO BANNER ===================== -->
+  <section class="promo-banner">
+    <div class="container">
+      <div class="promo-content">
+        <span class="promo-tag">🎁 Limited Time Offer</span>
+        <h2>Get <span class="highlight">25% OFF</span> on Your First Order!</h2>
+        <p>Use code <strong>TOYWORLD25</strong> at checkout. Free shipping on orders over $50!</p>
+        <a href="#shop" class="btn btn-primary">Grab the Deal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content" data-aos="fade-right">
+          <span class="section-tag">💛 Our Story</span>
+          <h2 class="section-title">Why Parents Trust ToyWorld</h2>
+          <p>At <strong>ToyWorld</strong>, we believe every child deserves toys that are safe, inspiring, and built to last. Since 2010, we've been curating the finest selection of toys from around the globe — from classic plush companions to innovative STEM kits.</p>
+          <p>Every toy in our store passes rigorous safety testing and is carefully selected by our team of child development experts. We're not just a toy store — we're a community of parents and caregivers dedicated to nurturing happy, creative little minds.</p>
+
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">🛡️</div>
+              <div>
+                <h4>100% Safe</h4>
+                <p>Non-toxic, certified materials</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🚚</div>
+              <div>
+                <h4>Free Shipping</h4>
+                <p>On orders above $50</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">↩️</div>
+              <div>
+                <h4>Easy Returns</h4>
+                <p>30-day hassle-free returns</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">💬</div>
+              <div>
+                <h4>24/7 Support</h4>
+                <p>We're always here to help</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image" data-aos="fade-left">
+          <div class="about-image-collage">
+            <img src="images/unicorn-toy.png" alt="Unicorn toy" class="collage-img img-1" />
+            <img src="images/bunny-toy.png" alt="Bunny toy" class="collage-img img-2" />
+            <img src="images/robot-toy.png" alt="Robot toy" class="collage-img img-3" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEWSLETTER ===================== -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Stay in the Loop! 🎈</h2>
+        <p>Subscribe to get exclusive deals, new arrivals & parenting tips.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required aria-label="Email address" />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">🧸</span>
+            <span class="logo-text">Toy<span class="logo-highlight">World</span></span>
+          </a>
+          <p>Making childhood magical since 2010. Quality toys for every age and stage.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Contact Us</h4>
+          <ul class="contact-list">
+            <li>📍 123 Toy Street, Fun City, USA</li>
+            <li>📞 +1 (800) 123-TOYS</li>
+            <li>✉️ hello@toyworld.com</li>
+            <li>🕐 Mon–Sat: 9AM – 8PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ToyWorld. All rights reserved. Made with 💖 for happy kids everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== CART SIDEBAR ===================== -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3>🛒 Your Cart</h3>
+      <button class="cart-close" id="cart-close" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <div class="cart-empty">
+        <span class="cart-empty-icon">🛍️</span>
+        <p>Your cart is empty</p>
+        <a href="#shop" class="btn btn-secondary" id="cart-shop-link">Start Shopping</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cart-footer" style="display:none">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span class="cart-total-price" id="cart-total-price">$0.00</span>
+      </div>
+      <button class="btn btn-primary cart-checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <!-- ===================== TOAST NOTIFICATION ===================== -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
