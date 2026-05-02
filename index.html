@@ -491,6 +491,50 @@
   <!-- ===================== TOAST NOTIFICATION ===================== -->
   <div class="toast-container" id="toast-container"></div>
 
+  <!-- ===================== CHATBOT WIDGET ===================== -->
+  <!-- Toggle Button -->
+  <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open ToyBot chat assistant">
+    <span class="chatbot-toggle-icon" id="chatbot-toggle-icon">🧸</span>
+    <span class="chatbot-toggle-label">ToyBot</span>
+    <span class="chatbot-notif-dot" id="chatbot-notif-dot"></span>
+  </button>
+
+  <!-- Chat Window -->
+  <div class="chatbot-window" id="chatbot-window" role="dialog" aria-label="ToyBot chat window">
+    <!-- Header -->
+    <div class="chatbot-header">
+      <div class="chatbot-avatar">🧸</div>
+      <div class="chatbot-header-info">
+        <span class="chatbot-name">ToyBot</span>
+        <span class="chatbot-status"><span class="chatbot-status-dot"></span>Online now</span>
+      </div>
+      <button class="chatbot-minimize" id="chatbot-minimize" aria-label="Close chat">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Messages -->
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+
+    <!-- Quick Replies -->
+    <div class="chatbot-quick-replies" id="chatbot-quick-replies"></div>
+
+    <!-- Input Area -->
+    <div class="chatbot-input-area">
+      <input
+        type="text"
+        class="chatbot-input"
+        id="chatbot-input"
+        placeholder="Ask me anything about toys…"
+        autocomplete="off"
+        maxlength="200"
+      />
+      <button class="chatbot-send" id="chatbot-send" aria-label="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2 11 13M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+      </button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
